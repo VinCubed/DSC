@@ -1,0 +1,25 @@
+{
+    "Name": "CMAAS_W2K19MS_EDCAP1_EnDel",
+    "Version": "V2",
+    "ModuleVersion": "2.0.3",
+    "Platform": "DSC",
+    "Owner": "EY_CTPE_DE_Configuration_Mgmt.GID@ey.net",
+    "CTP_Service": "CTPH",
+    "Product_App": "CMaaS",
+    "Deployment_Id": "DEVCFM",
+    "Modules": {
+        "EY_W2K19_Member_MSB": {
+        },
+        "EY_W2K19_Member_CoreAgents": {},
+        "EY_W2K19_Member_FIS": {}
+    },
+    "ModuleSource": {
+        "EY_W2K19_Member_MSB": {
+            "url": "https://github.com/ey-ctp/ctp-core-cmaas-msb-w2k19ms.git"
+        },
+        "EY_W2K19_Member_CoreAgents": {
+            "url": "https://github.com/ey-ctp/ctp-core-cmaas-msb-w2k19ms.git"
+        }
+    },
+    "Environments": ["NONPROD"]
+}

@@ -1,0 +1,30 @@
+{
+    "Name": "CMAAS_W2K19MS_EDCAP1_RelWorkers",
+    "OSType": "W2K19MS",
+    "Version": "V2",
+    "ModuleVersion": "2.0.3",
+    "Platform": "DSC",
+    "Owner": "EY_CTPE_DE_Configuration_Mgmt.GID@ey.net",
+    "CTP_Service": "CTPH",
+    "Product_App": "CMaaS",
+    "Deployment_Id": "DEVCFM",
+    "Modules": {
+        "EY_W2K19_Member_MSB": {
+          "3_5_LocalPolicy_UserAccountControl_BehavioroftheelevationpromptforadministratorsinAdminApprovalMode_ValueData" : 0,
+          "3_5_LocalPolicy_UserAccountControl_Detectapplicationinstallationsandpromptforelevation_ValueData" : 0,
+          "3_5_LocalPolicy_UserAccountControl_OnlyelevateUIAccessapplicationsthatareinstalledinsecurelocations_ValueData" : 0,
+          "3_5_LocalPolicy_UserAccountControl_RunalladministratorsinAdminApprovalMode_ValueData" : 0,
+          "3_5_LocalPolicy_MSS_AutoAdminLogon_EnableAutomaticLogon_notrecommended__ValueData" : 1
+        },
+        "EY_W2K19_Member_CoreAgents": {}
+    },
+    "ModuleSource": {
+        "EY_W2K19_Member_MSB": {
+            "url": "https://github.com/ey-ctp/ctp-core-cmaas-msb-w2k19ms.git"
+        },
+        "EY_W2K19_Member_CoreAgents": {
+            "url": "https://github.com/ey-ctp/ctp-core-cmaas-msb-w2k19ms.git"
+        }
+    },
+    "Environments": ["PROD","NONPROD"]
+}

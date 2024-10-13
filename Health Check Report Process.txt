@@ -1,0 +1,22 @@
+Export CBHealthcheck to CSV
+Open in Excel
+Copy headers from last week's sheet to this week's components (SEP, CWP, CB, Qualys)
+Clear filters
+Move VM name column from Healthcheck CSV to Column G
+
+SEP Column N
+=IFERROR(VLOOKUP(B2,QueryData!$G$2:$AJ$<last row of query data>,17,FALSE),"Script Did Not Run")
+
+CWP Column N
+=IFERROR(VLOOKUP(B2,QueryData!$G$2:$AJ$<last row of query data>,19,FALSE),"Script Did Not Run")
+
+CB Column N
+=IFERROR(VLOOKUP(B2,QueryData!$G$2:$AJ$<last row of query data>,29,FALSE),"Script Did Not Run")
+
+Qualys Column N
+=IFERROR(VLOOKUP(B2,QueryData!$G$2:$AJ$<last row of query data>,17,FALSE),"Script Did Not Run")
+
+SEP, CWP, CB & Qualys Columns O-Q
+=IFERROR(VLOOKUP(B2,QueryData!$G$2:$AJ$<last row of query data>,10,FALSE),"Script Did Not Run")
+=IFERROR(VLOOKUP(B2,QueryData!$G$2:$AJ$<last row of query data>,23,FALSE),"Script Did Not Run")
+=IFERROR(VLOOKUP(B2,QueryData!$G$2:$AJ$<last row of query data>,4,FALSE),"Script Did Not Run")
